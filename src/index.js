@@ -5,5 +5,10 @@ import './index.css';
 // import registerServiceWorker from './registerServiceWorker';
 import Hello from './components/hello';
 
-ReactDOM.render( < Hello name="Gareth" /> , document.getElementById('root'));
+const greeting = <div> 
+                    <Hello firstName="Gareth" lastName="Williams"/>
+                    <Hello firstName="John" lastName="Doe"/>
+                </div>
+
+ReactDOM.render( greeting , document.getElementById('root'));
 // registerServiceWorker();
